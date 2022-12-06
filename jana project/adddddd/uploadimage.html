@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>Input Image With Preview Image</title>
+</head>
+<body>
+ 
+	
+	<div class="container">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-cloud-upload icon'></i>
+			<h3>Upload Image</h3>
+			<p>Image size must be less than <span>2MB</span></p><br>
+      <!-- <input type="submit" value="Upload" id="submit" class="select-image"></td> -->
+		    <button class="select-image">Upload</button>
+        <br>  
+        </div>
+        <span class="area">
+          <span class="down" onClick='decreaseCount(event, this)'>▼</span>
+        <input type="text" value="0" class="text" required>
+      <span class="up"  onClick='increaseCount(event, this)'>▲</span>
+        </span>  
+	</div>
+
+      <script type="text/javascript">
+        function increaseCount(a, b) {
+          var input = b.previousElementSibling;
+          var value = parseInt(input.value, 10); 
+          value = isNaN(value)? 0 : value;
+          value ++;
+          input.value = value;
+          img=value;
+        }
+        function decreaseCount(a, b) {
+          var input = b.nextElementSibling;
+          var value = parseInt(input.value, 10); 
+          if (value > 1) {
+            value = isNaN(value)? 1 : value;
+            value --;
+            input.value = value;
+          }
+        }
+        function myFunction() {
+         
+  alert("Please select an image");
+} 
+function myFunctions() {
+  alert("Upload Successfull");
+}
+      </script>
+      <br>
+      <input type="submit" value="Seelect" id="submit" class="btn" onclick="myFunction()" ><br>
+      <input type="submit" value="Apply" id="submit" class="btn" onclick="myFunctions()" ><br>
+      <input type="submit" value="Back" id="submit" class="btn"  >
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

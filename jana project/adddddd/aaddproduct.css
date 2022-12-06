@@ -1,0 +1,27 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: black;
+}
+
+body{
+    background-image: url("https://media.istockphoto.com/id/1321288902/photo/black-grey-wooden-plank-wall-texture-background-old-natural-pattern-of-dark-wood-grained.jpg?b=1&s=170667a&w=0&k=20&c=yhXBT7-l23YBvyKGDDGkajz2aMuyxaooJQtyaKnTt_M=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+
+    margin: 5%;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.target{
+    color: red;
+    font-size: xx-large;
+}
+
+.click{
+    color: white;
+}

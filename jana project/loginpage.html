@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body, html {
+  height: 100%;
+  align-items: center;
+}
+body {
+  background-image: url('./1');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=tel]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:10;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  align-items: center;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  float: inline-start;
+  width: 100%;
+}
+.cancelbtn{
+  float: inline-start;
+  width: 70%;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+img {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: rgb(209, 255, 255);
+}
+h3{
+  font-size: xx-large;
+  color: #f44336;
+  text-align: center;
+}
+h5{
+  font-size: x-large;
+  color: #000000;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+</style>
+</head>
+<body> 
+  <div class="bg-img">
+    <form action="action_page.php" method="get" class="container">
+      <table >
+        <h3>Sign Up</h3>
+    <h5>Fill the details to create an account</h5>
+        <tr>
+          <th><label for="name"><b>Name</b></label></th>
+          <th><input type="text" placeholder="Enter your name" name="name" required></th>
+        </tr>
+        <tr>
+          <th><label for="tel"><b>Contact Number</b></label></th>
+          <th><input type="tel" name="tel" id="tel" placeholder="Enter the contact number" required></th>
+        </tr>
+        <tr>
+          <th><label for="email"><b>Email</b></label></th>
+          <th><input type="email" placeholder="Enter Email" name="email" required></th>
+        </tr>
+        <tr>
+          <th><label for="psw"><b>Password</b></label></th>
+          <th><input type="password" placeholder="Enter Password" name="psw" required></th>
+        </tr>
+        <tr>
+          <th><label for="psw-repeat"><b>Re-enter Password</b></label></th>
+          <th><input type="password" placeholder="Repeat Password" name="psw-repeat" required></th>
+        </tr>
+        <tr>
+          <tr>
+          <th><button type="submit" class="signupbtn">Sign Up</button></th>
+          </tr>
+          <tr>
+          <th><button type="submit" class="signupbtn"><a href="userlog.html">user page</a></button></th>
+          <th><button type="button" class="cancelbtn"><a href="homepage.html">Cancel</a></button></th>
+        </tr>
+      </table>
+    </form>
+  </div>   
+</body>
+</html>
